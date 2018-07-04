@@ -26,6 +26,13 @@
 
 
 
+  
+  
+    
+    
+  <script src="/hexo/lib/pace/pace.min.js?v=1.0.2"></script>
+  <link href="/hexo/lib/pace/pace-theme-flash.min.css?v=1.0.2" rel="stylesheet">
+
 
 
 
@@ -454,24 +461,23 @@
       
         
           
-            <blockquote>
-<p>注：Next主题版本 v6.3.0，以前的版本好像不是这么配置的</p>
-</blockquote>
-<h2 id="安装-hexo-symbols-count-time"><a href="#安装-hexo-symbols-count-time" class="headerlink" title="安装 hexo-symbols-count-time"></a>安装 hexo-symbols-count-time</h2><blockquote>
-<p>注：只需要在hexo下安装此插件（ yarn npm 随意）</p>
-</blockquote>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">yarn add hexo-symbols-count-time</span><br></pre></td></tr></table></figure>
-<h2 id="配置"><a href="#配置" class="headerlink" title="配置"></a>配置</h2><h3 id="hexo-config-yaml"><a href="#hexo-config-yaml" class="headerlink" title="hexo _config.yaml"></a>hexo _config.yaml</h3><blockquote>
-<p>这是显示的基础配置，next主题初始配置默认显示了，只需要hexo这边配置即可，注：修改此配置需要重启服务才能更新</p>
-</blockquote>
-<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">symbols_count_time:</span></span><br><span class="line"><span class="attr">  symbols:</span> <span class="literal">true</span> <span class="comment"># 文章字数</span></span><br><span class="line"><span class="attr">  time:</span> <span class="literal">true</span> <span class="comment"># 阅读时长</span></span><br><span class="line"><span class="attr">  total_symbols:</span> <span class="literal">true</span> <span class="comment"># 所有文章总字数</span></span><br><span class="line"><span class="attr">  total_time:</span> <span class="literal">true</span> <span class="comment"># 所有文章阅读中时长</span></span><br></pre></td></tr></table></figure>
-<h3 id="next-config-yaml"><a href="#next-config-yaml" class="headerlink" title="next _config.yaml"></a>next _config.yaml</h3><blockquote>
-<p>修改此配置无需要重启服务即可更新</p>
-</blockquote>
-<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">symbols_count_time:</span></span><br><span class="line"><span class="attr">  separated_meta:</span> <span class="literal">true</span>  <span class="comment"># 是否换行显示 字数统计 及 阅读时长</span></span><br><span class="line"><span class="attr">  item_text_post:</span> <span class="literal">true</span>  <span class="comment"># 文章 字数统计 阅读时长 使用图标 还是 文本表示</span></span><br><span class="line"><span class="attr">  item_text_total:</span> <span class="literal">false</span> <span class="comment"># 博客底部统计 字数统计 阅读时长 使用图标 还是 文本表示</span></span><br><span class="line"><span class="attr">  awl:</span> <span class="number">4</span></span><br><span class="line"><span class="attr">  wpm:</span> <span class="number">275</span></span><br></pre></td></tr></table></figure>
-<p>具体可查看 <a href="https://github.com/theme-next/hexo-symbols-count-time" target="_blank" rel="noopener">symbols_count_time</a></p>
-
           
+注：Next主题版本 v6.3.0，以前的版本好像不是这么配置的
+
+安装 hexo-symbols-count-time
+注：只需要在hexo下安装此插件（ yarn npm 随意）
+
+1yarn add hexo-symbols-count-time
+配置hexo _config.yaml
+这是
+          ...
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/hexo/2018/07/04/Hexo Next主题开启字数统计及阅读时长/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>
@@ -667,9 +673,16 @@
       
         
           
-            <p>使用Hexo构建的个人博客，Mark一下</p>
+          使用Hexo构建的个人博客，Mark一下
 
           
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/hexo/2018/07/02/第一篇文章/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>
@@ -928,6 +941,8 @@
 
 
 
+  
+
 
 
 
@@ -958,6 +973,11 @@
   
   
     <script type="text/javascript" src="/hexo/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/hexo/lib/canvas-nest/canvas-nest.min.js"></script>
   
 
 
@@ -1003,6 +1023,19 @@
 
 
 
+
+
+<!-- LOCAL: You can save these files to your site and update links -->
+    
+        
+        <link rel="stylesheet" href="https://aimingoo.github.io/gitmint/style/default.css">
+        <script src="https://aimingoo.github.io/gitmint/dist/gitmint.browser.js"></script>
+    
+<!-- END LOCAL -->
+
+    
+
+    
 
 
 
