@@ -6,7 +6,7 @@
   <link href="/hexo/atom.xml" rel="self"/>
   
   <link href="https://shjhe.github.io/"/>
-  <updated>2018-07-03T10:20:13.000Z</updated>
+  <updated>2018-07-04T04:32:57.927Z</updated>
   <id>https://shjhe.github.io/</id>
   
   <author>
@@ -15,6 +15,35 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Hexo Next主题开启字数统计及阅读时长</title>
+    <link href="https://shjhe.github.io/2018/07/04/Hexo%20Next%E4%B8%BB%E9%A2%98%E5%BC%80%E5%90%AF%E5%AD%97%E6%95%B0%E7%BB%9F%E8%AE%A1%E5%8F%8A%E9%98%85%E8%AF%BB%E6%97%B6%E9%95%BF/"/>
+    <id>https://shjhe.github.io/2018/07/04/Hexo Next主题开启字数统计及阅读时长/</id>
+    <published>2018-07-04T03:34:56.000Z</published>
+    <updated>2018-07-04T04:32:57.927Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;blockquote&gt;
+&lt;p&gt;注：Next主题版本 v6.3.0，以前的版本好像不是这么配置的&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&quot;安装-hexo-symbols-count-time&quot;&gt;&lt;a
+        
+      
+    
+    </summary>
+    
+      <category term="Hexo使用" scheme="https://shjhe.github.io/categories/Hexo%E4%BD%BF%E7%94%A8/"/>
+    
+    
+      <category term="Hexo Next配置" scheme="https://shjhe.github.io/tags/Hexo-Next%E9%85%8D%E7%BD%AE/"/>
+    
+  </entry>
   
   <entry>
     <title>第一篇文章</title>
