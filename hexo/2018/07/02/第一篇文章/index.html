@@ -26,6 +26,13 @@
 
 
 
+  
+  
+    
+    
+  <script src="/hexo/lib/pace/pace.min.js?v=1.0.2"></script>
+  <link href="/hexo/lib/pace/pace-theme-flash.min.css?v=1.0.2" rel="stylesheet">
+
 
 
 
@@ -409,6 +416,16 @@
 
           
             
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/hexo/2018/07/02/第一篇文章/#comments" itemprop="discussionUrl">
+                  <span class="post-meta-item-text">评论数：</span> <span class="post-comments-count gitment-comments-count" data-xid="/hexo/2018/07/02/第一篇文章/" itemprop="commentsCount"></span>
+                </a>
+              </span>
+            
           
 
           
@@ -566,6 +583,13 @@
 
           </div>
           
+
+  
+    <div class="comments" id="comments">
+      
+        <div id="gitment-container"></div>
+      
+    </div>
 
   
 
@@ -785,6 +809,8 @@
 
 
 
+  
+
 
 
 
@@ -815,6 +841,11 @@
   
   
     <script type="text/javascript" src="/hexo/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/hexo/lib/canvas-nest/canvas-nest.min.js"></script>
   
 
 
@@ -864,6 +895,43 @@
 
 
 
+
+
+<!-- LOCAL: You can save these files to your site and update links -->
+    
+        
+        <link rel="stylesheet" href="https://aimingoo.github.io/gitmint/style/default.css">
+        <script src="https://aimingoo.github.io/gitmint/dist/gitmint.browser.js"></script>
+    
+<!-- END LOCAL -->
+
+    
+
+    
+      <script type="text/javascript">
+      function renderGitment(){
+        var gitment = new Gitmint({
+            id: window.location.pathname,
+            owner: 'shjhe',
+            repo: 'shjhe.github.io',
+            
+            lang: "" || navigator.language || navigator.systemLanguage || navigator.userLanguage,
+            
+            oauth: {
+            
+            
+                client_secret: '893a3b2efb46dfd7977828d9315dbdb59aaef348',
+            
+                client_id: '3ecf7d35dbeba3e83b06'
+            }});
+        gitment.render('gitment-container');
+      }
+
+      
+      renderGitment();
+      
+      </script>
+    
 
 
 
