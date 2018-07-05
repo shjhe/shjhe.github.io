@@ -126,7 +126,7 @@
 <meta property="og:site_name" content="Tyler FE">
 <meta property="og:description" content="Tyler的个人网站">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2018-06-29T09:33:01.080Z">
+<meta property="og:updated_time" content="2018-07-05T03:17:40.859Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="categories">
 <meta name="twitter:description" content="Tyler的个人网站">
@@ -399,48 +399,6 @@
 
           </div>
           
-
-  
-    <div class="comments" id="comments">
-      
-        <div id="gitment-container"></div>
-      
-      <link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css">
-      <script src="https://imsun.github.io/gitment/dist/gitment.browser.js"></script>
-      <script>
-        const myTheme = {
-          render(state, instance) {
-            const container = document.createElement('div');
-            container.lang = "en-US";
-            container.className = 'gitment-container gitment-root-container';
-            container.appendChild(instance.renderHeader(state, instance));
-            container.appendChild(instance.renderEditor(state, instance));
-            container.appendChild(instance.renderComments(state, instance));
-            container.appendChild(instance.renderFooter(state, instance));
-            return container;
-          }
-        }
-        function showGitment() {
-          $("#gitment-display-button").attr("style", "display:none");
-          $("#gitment-container").attr("style", "").addClass("gitment_container");
-          var gitment = new Gitment({
-            id: 'categories',
-            theme: myTheme,
-            owner: 'shjhe',
-            repo: 'HexoComment',
-            oauth: {
-              client_id: 'a34ecee913f9e78038db',
-              client_secret: '2ad67685f3894c7f7c05addb296e214c4dd4d96c'
-            }
-          });
-          gitment.render('gitment-container');
-        }
-       </script>
-    </div>
-
-  
-
-
 
         </div>
         
@@ -759,30 +717,6 @@
       </style>
     
 
-    
-      <script type="text/javascript">
-      function renderGitment(){
-        var gitment = new Gitmint({
-            id: window.location.pathname,
-            owner: 'shjhe',
-            repo: 'HexoComment',
-            
-            lang: "" || navigator.language || navigator.systemLanguage || navigator.userLanguage,
-            
-            oauth: {
-            
-            
-                client_secret: '2ad67685f3894c7f7c05addb296e214c4dd4d96c',
-            
-                client_id: 'a34ecee913f9e78038db'
-            }});
-        gitment.render('gitment-container');
-      }
-
-      
-      renderGitment();
-      
-      </script>
     
 
 
