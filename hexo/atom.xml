@@ -6,7 +6,7 @@
   <link href="/hexo/atom.xml" rel="self"/>
   
   <link href="https://shjhe.github.io/"/>
-  <updated>2018-07-04T04:32:57.927Z</updated>
+  <updated>2018-07-10T15:22:29.798Z</updated>
   <id>https://shjhe.github.io/</id>
   
   <author>
@@ -17,11 +17,39 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>window下使用node管理nginx</title>
+    <link href="https://shjhe.github.io/2018/07/10/window%E4%B8%8B%E4%BD%BF%E7%94%A8node%E7%AE%A1%E7%90%86nginx/"/>
+    <id>https://shjhe.github.io/2018/07/10/window下使用node管理nginx/</id>
+    <published>2018-07-10T14:50:38.000Z</published>
+    <updated>2018-07-10T15:22:29.798Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;制作念头：项目开发者个人需要搭建个人的nginx，作为代理老项目和Vue服务端渲染项目，而nginx配置文件需要不断更新且共享，项目一开始使用Q群沟通更新配置，不用说这种方式肯定很Low，而且总所周知nginx在window下管理是有多麻烦，更新配置要关掉进程再重启，当然使
+        
+      
+    
+    </summary>
+    
+      <category term="node工具" scheme="https://shjhe.github.io/categories/node%E5%B7%A5%E5%85%B7/"/>
+    
+    
+      <category term="nginx" scheme="https://shjhe.github.io/tags/nginx/"/>
+    
+      <category term="node" scheme="https://shjhe.github.io/tags/node/"/>
+    
+  </entry>
+  
+  <entry>
     <title>Hexo Next主题开启字数统计及阅读时长</title>
     <link href="https://shjhe.github.io/2018/07/04/Hexo%20Next%E4%B8%BB%E9%A2%98%E5%BC%80%E5%90%AF%E5%AD%97%E6%95%B0%E7%BB%9F%E8%AE%A1%E5%8F%8A%E9%98%85%E8%AF%BB%E6%97%B6%E9%95%BF/"/>
     <id>https://shjhe.github.io/2018/07/04/Hexo Next主题开启字数统计及阅读时长/</id>
     <published>2018-07-04T03:34:56.000Z</published>
-    <updated>2018-07-04T04:32:57.927Z</updated>
+    <updated>2018-07-10T14:46:38.738Z</updated>
     
     <summary type="html">
     
