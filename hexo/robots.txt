@@ -1,5 +1,5 @@
 User-agent: *
-Allow: /hexo
+Allow: /hexo/
 Allow: /hexo/archives/
 Allow: /hexo/categories/
 Allow: /hexo/tags/ 
