@@ -97,7 +97,7 @@
     root: '/hexo/',
     scheme: 'Mist',
     version: '6.3.0',
-    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":true,"onmobile":false},
+    sidebar: {"position":"left","display":"hide","offset":12,"b2t":false,"scrollpercent":true,"onmobile":false},
     fancybox: true,
     fastclick: false,
     lazyload: false,
@@ -119,19 +119,19 @@
 
 
 
-  <meta name="description" content="制作念头：项目开发者个人需要搭建个人的nginx，作为代理老项目和Vue服务端渲染项目，而nginx配置文件需要不断更新且共享，项目一开始使用Q群沟通更新配置，不用说这种方式肯定很Low，而且总所周知nginx在window下管理是有多麻烦，更新配置要关掉进程再重启，当然使用.bat脚本也可以方便操控，但是更新配置文件有头大了；因此我就想着如果能像在Linux操作nginx一样方便，那就方便多了，">
+  <meta name="description" content="制作念头：项目开发者个人需要搭建个人的nginx，作为代理老项目和Vue服务端渲染项目的中间服务，需要不断更新且共享nginx配置文件。项目一开始使用Q群沟通更新配置，不用说这种方式肯定很Low，而且总所周知nginx在window下管理是有多麻烦，更新配置要关掉进程再重启，当然使用.bat脚本也可以方便操控，但是更新配置文件有头大了（其实用node操控的核心也是用window命令）；因此我就想着">
 <meta name="keywords" content="nginx,node">
 <meta property="og:type" content="article">
 <meta property="og:title" content="window下使用node管理nginx">
 <meta property="og:url" content="https://shjhe.github.io/hexo/2018/07/10/window下使用node管理nginx/index.html">
 <meta property="og:site_name" content="Tyler FE">
-<meta property="og:description" content="制作念头：项目开发者个人需要搭建个人的nginx，作为代理老项目和Vue服务端渲染项目，而nginx配置文件需要不断更新且共享，项目一开始使用Q群沟通更新配置，不用说这种方式肯定很Low，而且总所周知nginx在window下管理是有多麻烦，更新配置要关掉进程再重启，当然使用.bat脚本也可以方便操控，但是更新配置文件有头大了；因此我就想着如果能像在Linux操作nginx一样方便，那就方便多了，">
+<meta property="og:description" content="制作念头：项目开发者个人需要搭建个人的nginx，作为代理老项目和Vue服务端渲染项目的中间服务，需要不断更新且共享nginx配置文件。项目一开始使用Q群沟通更新配置，不用说这种方式肯定很Low，而且总所周知nginx在window下管理是有多麻烦，更新配置要关掉进程再重启，当然使用.bat脚本也可以方便操控，但是更新配置文件有头大了（其实用node操控的核心也是用window命令）；因此我就想着">
 <meta property="og:locale" content="zh-CN">
 <meta property="og:image" content="https://shjhe.github.io/hexo/images/201807/QQ截图20180710231815.jpg">
-<meta property="og:updated_time" content="2018-07-11T03:01:38.292Z">
+<meta property="og:updated_time" content="2018-07-12T08:50:12.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="window下使用node管理nginx">
-<meta name="twitter:description" content="制作念头：项目开发者个人需要搭建个人的nginx，作为代理老项目和Vue服务端渲染项目，而nginx配置文件需要不断更新且共享，项目一开始使用Q群沟通更新配置，不用说这种方式肯定很Low，而且总所周知nginx在window下管理是有多麻烦，更新配置要关掉进程再重启，当然使用.bat脚本也可以方便操控，但是更新配置文件有头大了；因此我就想着如果能像在Linux操作nginx一样方便，那就方便多了，">
+<meta name="twitter:description" content="制作念头：项目开发者个人需要搭建个人的nginx，作为代理老项目和Vue服务端渲染项目的中间服务，需要不断更新且共享nginx配置文件。项目一开始使用Q群沟通更新配置，不用说这种方式肯定很Low，而且总所周知nginx在window下管理是有多麻烦，更新配置要关掉进程再重启，当然使用.bat脚本也可以方便操控，但是更新配置文件有头大了（其实用node操控的核心也是用window命令）；因此我就想着">
 <meta name="twitter:image" content="https://shjhe.github.io/hexo/images/201807/QQ截图20180710231815.jpg">
 
 
@@ -391,7 +391,7 @@
                 
                   <span class="post-meta-item-text">更新于</span>
                 
-                <time title="修改时间：2018-07-11 11:01:38" itemprop="dateModified" datetime="2018-07-11T11:01:38+08:00">2018-07-11</time>
+                <time title="修改时间：2018-07-12 16:50:12" itemprop="dateModified" datetime="2018-07-12T16:50:12+08:00">2018-07-12</time>
               
             
           </span>
@@ -446,7 +446,7 @@
                 
                   <span class="post-meta-item-text">本文字数：</span>
                 
-                <span title="本文字数">628</span>
+                <span title="本文字数">622</span>
               
 
               
@@ -480,8 +480,8 @@
       
 
       
-        <p>制作念头：项目开发者个人需要搭建个人的nginx，作为代理老项目和Vue服务端渲染项目，而nginx配置文件需要不断更新且共享，项目一开始使用Q群沟通更新配置，不用说这种方式肯定很Low，而且总所周知nginx在window下管理是有多麻烦，更新配置要关掉进程再重启，当然使用.bat脚本也可以方便操控，但是更新配置文件有头大了；因此我就想着如果能像在Linux操作nginx一样方便，那就方便多了，于是乎我就写用node写了这个工具，具体的使用方法如下：</p>
-<h2 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h2><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">npm install -g nginx-in-node</span><br><span class="line"><span class="comment"># or</span></span><br><span class="line">yarn global add nginx-in-node</span><br></pre></td></tr></table></figure>
+        <p>制作念头：项目开发者个人需要搭建个人的nginx，作为代理老项目和Vue服务端渲染项目的中间服务，需要不断更新且共享nginx配置文件。项目一开始使用Q群沟通更新配置，不用说这种方式肯定很Low，而且总所周知nginx在window下管理是有多麻烦，更新配置要关掉进程再重启，当然使用.bat脚本也可以方便操控，但是更新配置文件有头大了（其实用node操控的核心也是用window命令）；因此我就想着如果能像在Linux操作nginx一样方便，那就方便多了，于是乎我就写用node写了这个工具，具体的使用方法如下：</p>
+<h2 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h2><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install -g nginx-in-node</span><br></pre></td></tr></table></figure>
 <h2 id="配置nginx-下载链接"><a href="#配置nginx-下载链接" class="headerlink" title="配置nginx 下载链接"></a>配置nginx <a href="http://nginx.org/en/download.html" target="_blank" rel="noopener">下载链接</a></h2><p>配置Path系统变量，目录级别到nginx.exe即可</p>
 <h2 id="使用"><a href="#使用" class="headerlink" title="使用"></a>使用</h2><h3 id="参数"><a href="#参数" class="headerlink" title="参数"></a>参数</h3><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">node-nginx [-s [stop/reload/quit]] [-f [configPath]]</span><br></pre></td></tr></table></figure>
 <ol>
