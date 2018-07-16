@@ -119,18 +119,22 @@
 
 
 
-  <meta name="description" content="使用Hexo构建的个人博客，Mark一下">
-<meta name="keywords" content="简述">
+  <meta name="description" content="打开options 菜单栏点击Tools，然后在弹出的下拉列表中点击第一个options      配置HTTPS 如果需要的话，配置如图      配置端口 配置如图      整体配置比较简单，如果网站是https的需要开启第二步，否则监听不到的，其次如果偏向H5的真机调试，推荐spy-debugger，这里有个weinre可以调试网页查看控制台输出，个人觉得很有用">
+<meta name="keywords" content="fiddler,移动端代理">
 <meta property="og:type" content="article">
-<meta property="og:title" content="第一篇文章">
-<meta property="og:url" content="https://shjhe.github.io/hexo/2018/07/02/第一篇文章/index.html">
+<meta property="og:title" content="使用Fiddler进行移动端代理调试">
+<meta property="og:url" content="https://shjhe.github.io/hexo/2018/07/16/使用Fiddler进行移动端代理调试/index.html">
 <meta property="og:site_name" content="Tyler FE">
-<meta property="og:description" content="使用Hexo构建的个人博客，Mark一下">
+<meta property="og:description" content="打开options 菜单栏点击Tools，然后在弹出的下拉列表中点击第一个options      配置HTTPS 如果需要的话，配置如图      配置端口 配置如图      整体配置比较简单，如果网站是https的需要开启第二步，否则监听不到的，其次如果偏向H5的真机调试，推荐spy-debugger，这里有个weinre可以调试网页查看控制台输出，个人觉得很有用">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2018-07-03T10:20:13.000Z">
+<meta property="og:image" content="https://shjhe.github.io/hexo/images/201807/20180716172421.png">
+<meta property="og:image" content="https://shjhe.github.io/hexo/images/201807/TIM截图20180716173134.png">
+<meta property="og:image" content="https://shjhe.github.io/hexo/images/201807/TIM截图20180716173551.png">
+<meta property="og:updated_time" content="2018-07-16T09:41:33.403Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="第一篇文章">
-<meta name="twitter:description" content="使用Hexo构建的个人博客，Mark一下">
+<meta name="twitter:title" content="使用Fiddler进行移动端代理调试">
+<meta name="twitter:description" content="打开options 菜单栏点击Tools，然后在弹出的下拉列表中点击第一个options      配置HTTPS 如果需要的话，配置如图      配置端口 配置如图      整体配置比较简单，如果网站是https的需要开启第二步，否则监听不到的，其次如果偏向H5的真机调试，推荐spy-debugger，这里有个weinre可以调试网页查看控制台输出，个人觉得很有用">
+<meta name="twitter:image" content="https://shjhe.github.io/hexo/images/201807/20180716172421.png">
 
 
 
@@ -139,7 +143,7 @@
 
 
 
-  <link rel="canonical" href="https://shjhe.github.io/hexo/2018/07/02/第一篇文章/"/>
+  <link rel="canonical" href="https://shjhe.github.io/hexo/2018/07/16/使用Fiddler进行移动端代理调试/"/>
 
 
 
@@ -149,7 +153,7 @@
   };
 </script>
 
-  <title>第一篇文章 | Tyler FE</title>
+  <title>使用Fiddler进行移动端代理调试 | Tyler FE</title>
   
 
 
@@ -349,7 +353,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://shjhe.github.io/hexo/hexo/2018/07/02/第一篇文章/">
+    <link itemprop="mainEntityOfPage" href="https://shjhe.github.io/hexo/hexo/2018/07/16/使用Fiddler进行移动端代理调试/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Tyler He">
@@ -366,7 +370,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">第一篇文章
+          <h1 class="post-title" itemprop="name headline">使用Fiddler进行移动端代理调试
               
             
           </h1>
@@ -391,24 +395,12 @@
                 
               
 
-              <time title="创建时间：2018-07-02 18:08:13" itemprop="dateCreated datePublished" datetime="2018-07-02T18:08:13+08:00">2018-07-02</time>
+              <time title="创建时间：2018-07-16 17:00:35 / 修改时间：17:41:33" itemprop="dateCreated datePublished" datetime="2018-07-16T17:00:35+08:00">2018-07-16</time>
             
 
             
               
 
-              
-                
-                <span class="post-meta-divider">|</span>
-                
-
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-calendar-check-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">更新于</span>
-                
-                <time title="修改时间：2018-07-03 18:20:13" itemprop="dateModified" datetime="2018-07-03T18:20:13+08:00">2018-07-03</time>
               
             
           </span>
@@ -425,7 +417,7 @@
                 <span class="post-meta-item-text">分类于</span>
               
               
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/hexo/categories/生活/" itemprop="url" rel="index"><span itemprop="name">生活</span></a></span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/hexo/categories/前端工具/" itemprop="url" rel="index"><span itemprop="name">前端工具</span></a></span>
 
                 
                 
@@ -440,8 +432,8 @@
                 <span class="post-meta-item-icon">
                   <i class="fa fa-comment-o"></i>
                 </span>
-                <a href="/hexo/2018/07/02/第一篇文章/#comments" itemprop="discussionUrl">
-                  <span class="post-meta-item-text">评论数：</span> <span class="post-comments-count gitment-comments-count" data-xid="/hexo/2018/07/02/第一篇文章/" itemprop="commentsCount"></span>
+                <a href="/hexo/2018/07/16/使用Fiddler进行移动端代理调试/#comments" itemprop="discussionUrl">
+                  <span class="post-meta-item-text">评论数：</span> <span class="post-comments-count gitment-comments-count" data-xid="/hexo/2018/07/16/使用Fiddler进行移动端代理调试/" itemprop="commentsCount"></span>
                 </a>
               </span>
             
@@ -463,7 +455,7 @@
                 
                   <span class="post-meta-item-text">本文字数：</span>
                 
-                <span title="本文字数">21</span>
+                <span title="本文字数">189</span>
               
 
               
@@ -497,7 +489,30 @@
       
 
       
-        <p>使用Hexo构建的个人博客，Mark一下</p>
+        <ol>
+<li>打开options<blockquote>
+<p>菜单栏点击Tools，然后在弹出的下拉列表中点击第一个options</p>
+</blockquote>
+</li>
+</ol>
+<p><img src="/hexo/images/201807/20180716172421.png" alt="20180716172421"></p>
+<ol start="2">
+<li>配置HTTPS<blockquote>
+<p>如果需要的话，配置如图</p>
+</blockquote>
+</li>
+</ol>
+<p><img src="/hexo/images/201807/TIM截图20180716173134.png" alt="TIM截图20180716173134"></p>
+<ol start="2">
+<li>配置端口<blockquote>
+<p>配置如图</p>
+</blockquote>
+</li>
+</ol>
+<p><img src="/hexo/images/201807/TIM截图20180716173551.png" alt="TIM截图20180716173551"></p>
+<blockquote>
+<p>整体配置比较简单，如果网站是https的需要开启第二步，否则监听不到的，其次如果偏向H5的真机调试，推荐<a href="https://www.npmjs.com/package/spy-debugger" target="_blank" rel="noopener">spy-debugger</a>，这里有个weinre可以调试网页查看控制台输出，个人觉得很有用</p>
+</blockquote>
 
       
     </div>
@@ -543,7 +558,7 @@
     <strong>本文作者： </strong>Tyler He</li>
   <li class="post-copyright-link">
     <strong>本文链接：</strong>
-    <a href="https://shjhe.github.io/hexo/2018/07/02/第一篇文章/" title="第一篇文章">https://shjhe.github.io/hexo/2018/07/02/第一篇文章/</a>
+    <a href="https://shjhe.github.io/hexo/2018/07/16/使用Fiddler进行移动端代理调试/" title="使用Fiddler进行移动端代理调试">https://shjhe.github.io/hexo/2018/07/16/使用Fiddler进行移动端代理调试/</a>
   </li>
   <li class="post-copyright-license">
     <strong>版权声明： </strong>本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" rel="external nofollow" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明出处！</li>
@@ -556,7 +571,9 @@
       
         <div class="post-tags">
           
-            <a href="/hexo/tags/简述/" rel="tag"><i class="fa fa-tag"></i> 简述</a>
+            <a href="/hexo/tags/fiddler/" rel="tag"><i class="fa fa-tag"></i> fiddler</a>
+          
+            <a href="/hexo/tags/移动端代理/" rel="tag"><i class="fa fa-tag"></i> 移动端代理</a>
           
         </div>
       
@@ -569,14 +586,18 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
+              <a href="/hexo/2018/07/10/window下使用node管理nginx/" rel="next" title="window下使用node管理nginx">
+                <i class="fa fa-chevron-left"></i> window下使用node管理nginx
+              </a>
+            
           </div>
 
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/hexo/2018/07/04/Hexo Next主题开启字数统计及阅读时长/" rel="prev" title="Hexo Next主题开启字数统计及阅读时长">
-                Hexo Next主题开启字数统计及阅读时长 <i class="fa fa-chevron-right"></i>
+              <a href="/hexo/2018/07/16/使用Fiddler拦截线上H5，并替换成开发环境页面/" rel="prev" title="使用Fiddler拦截线上H5，并替换成开发环境页面">
+                使用Fiddler拦截线上H5，并替换成开发环境页面 <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -627,7 +648,7 @@
           $("#gitment-display-button").attr("style", "display:none");
           $("#gitment-container").attr("style", "").addClass("gitment_container");
           var gitment = new Gitment({
-            id: '第一篇文章',
+            id: '使用Fiddler进行移动端代理调试',
             theme: myTheme,
             owner: 'shjhe',
             repo: 'HexoComment',
