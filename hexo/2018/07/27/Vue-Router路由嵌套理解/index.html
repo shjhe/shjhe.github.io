@@ -119,18 +119,18 @@
 
 
 
-  <meta name="description" content="使用Hexo构建的个人博客，Mark一下。从现在开始记录开发生活，不断提升自己">
-<meta name="keywords" content="简述">
+  <meta name="description" content="背景最近有个初学Vue的朋友问我，为什么我的两层路由跳不起来了，直接输url也不行？信息不是很充足及看不到源码的我，当时是那个一脸懵逼啊，心想这肯定是代码的问题，跟层级无关。接着我继续追问…(省略)…大致明白了情况，原来这位朋友没有理解Vue-Router嵌套的原理，下面整理了一下我对Vue-Router路由嵌套的理解 Vue-Router嵌套路由首先假设项目中有两个路由Profile和Posts">
+<meta name="keywords" content="Vue-Router">
 <meta property="og:type" content="article">
-<meta property="og:title" content="第一篇文章">
-<meta property="og:url" content="https://shjhe.github.io/hexo/2018/07/02/第一篇文章/index.html">
+<meta property="og:title" content="Vue-Router路由嵌套理解">
+<meta property="og:url" content="https://shjhe.github.io/hexo/2018/07/27/Vue-Router路由嵌套理解/index.html">
 <meta property="og:site_name" content="Tyler FE">
-<meta property="og:description" content="使用Hexo构建的个人博客，Mark一下。从现在开始记录开发生活，不断提升自己">
+<meta property="og:description" content="背景最近有个初学Vue的朋友问我，为什么我的两层路由跳不起来了，直接输url也不行？信息不是很充足及看不到源码的我，当时是那个一脸懵逼啊，心想这肯定是代码的问题，跟层级无关。接着我继续追问…(省略)…大致明白了情况，原来这位朋友没有理解Vue-Router嵌套的原理，下面整理了一下我对Vue-Router路由嵌套的理解 Vue-Router嵌套路由首先假设项目中有两个路由Profile和Posts">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2018-07-03T10:20:13.000Z">
+<meta property="og:updated_time" content="2018-07-27T03:53:47.512Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="第一篇文章">
-<meta name="twitter:description" content="使用Hexo构建的个人博客，Mark一下。从现在开始记录开发生活，不断提升自己">
+<meta name="twitter:title" content="Vue-Router路由嵌套理解">
+<meta name="twitter:description" content="背景最近有个初学Vue的朋友问我，为什么我的两层路由跳不起来了，直接输url也不行？信息不是很充足及看不到源码的我，当时是那个一脸懵逼啊，心想这肯定是代码的问题，跟层级无关。接着我继续追问…(省略)…大致明白了情况，原来这位朋友没有理解Vue-Router嵌套的原理，下面整理了一下我对Vue-Router路由嵌套的理解 Vue-Router嵌套路由首先假设项目中有两个路由Profile和Posts">
 
 
 
@@ -139,7 +139,7 @@
 
 
 
-  <link rel="canonical" href="https://shjhe.github.io/hexo/2018/07/02/第一篇文章/"/>
+  <link rel="canonical" href="https://shjhe.github.io/hexo/2018/07/27/Vue-Router路由嵌套理解/"/>
 
 
 
@@ -149,7 +149,7 @@
   };
 </script>
 
-  <title>第一篇文章 | Tyler FE</title>
+  <title>Vue-Router路由嵌套理解 | Tyler FE</title>
   
 
 
@@ -349,7 +349,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://shjhe.github.io/hexo/hexo/2018/07/02/第一篇文章/">
+    <link itemprop="mainEntityOfPage" href="https://shjhe.github.io/hexo/hexo/2018/07/27/Vue-Router路由嵌套理解/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Tyler He">
@@ -366,7 +366,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">第一篇文章
+          <h1 class="post-title" itemprop="name headline">Vue-Router路由嵌套理解
               
             
           </h1>
@@ -391,24 +391,12 @@
                 
               
 
-              <time title="创建时间：2018-07-02 18:08:13" itemprop="dateCreated datePublished" datetime="2018-07-02T18:08:13+08:00">2018-07-02</time>
+              <time title="创建时间：2018-07-27 10:43:08 / 修改时间：11:53:47" itemprop="dateCreated datePublished" datetime="2018-07-27T10:43:08+08:00">2018-07-27</time>
             
 
             
               
 
-              
-                
-                <span class="post-meta-divider">|</span>
-                
-
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-calendar-check-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">更新于</span>
-                
-                <time title="修改时间：2018-07-03 18:20:13" itemprop="dateModified" datetime="2018-07-03T18:20:13+08:00">2018-07-03</time>
               
             
           </span>
@@ -425,7 +413,14 @@
                 <span class="post-meta-item-text">分类于</span>
               
               
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/hexo/categories/生活/" itemprop="url" rel="index"><span itemprop="name">生活</span></a></span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/hexo/categories/Vue生态/" itemprop="url" rel="index"><span itemprop="name">Vue生态</span></a></span>
+
+                
+                
+                  ，
+                
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/hexo/categories/Vue生态/前端框架/" itemprop="url" rel="index"><span itemprop="name">前端框架</span></a></span>
 
                 
                 
@@ -440,8 +435,8 @@
                 <span class="post-meta-item-icon">
                   <i class="fa fa-comment-o"></i>
                 </span>
-                <a href="/hexo/2018/07/02/第一篇文章/#comments" itemprop="discussionUrl">
-                  <span class="post-meta-item-text">评论数：</span> <span class="post-comments-count gitment-comments-count" data-xid="/hexo/2018/07/02/第一篇文章/" itemprop="commentsCount"></span>
+                <a href="/hexo/2018/07/27/Vue-Router路由嵌套理解/#comments" itemprop="discussionUrl">
+                  <span class="post-meta-item-text">评论数：</span> <span class="post-comments-count gitment-comments-count" data-xid="/hexo/2018/07/27/Vue-Router路由嵌套理解/" itemprop="commentsCount"></span>
                 </a>
               </span>
             
@@ -463,7 +458,7 @@
                 
                   <span class="post-meta-item-text">本文字数：</span>
                 
-                <span title="本文字数">40</span>
+                <span title="本文字数">2.4k</span>
               
 
               
@@ -477,7 +472,7 @@
                 
                   <span class="post-meta-item-text">阅读时长 &asymp;</span>
                 
-                <span title="阅读时长">1 分钟</span>
+                <span title="阅读时长">2 分钟</span>
               
             </div>
           
@@ -497,7 +492,21 @@
       
 
       
-        <p>使用Hexo构建的个人博客，Mark一下。从现在开始记录开发生活，不断提升自己</p>
+        <h2 id="背景"><a href="#背景" class="headerlink" title="背景"></a>背景</h2><p>最近有个初学Vue的朋友问我，为什么我的两层路由跳不起来了，直接输url也不行？信息不是很充足及看不到源码的我，当时是那个一脸懵逼啊，心想这肯定是代码的问题，跟层级无关。接着我继续追问…(省略)…大致明白了情况，原来这位朋友没有理解Vue-Router嵌套的原理，下面整理了一下我对Vue-Router路由嵌套的理解</p>
+<h2 id="Vue-Router嵌套路由"><a href="#Vue-Router嵌套路由" class="headerlink" title="Vue-Router嵌套路由"></a>Vue-Router嵌套路由</h2><p>首先假设项目中有两个路由Profile和Posts，按写法把他们定义为一层路由，是<code>Root的子路由</code>，因此Root中要有<code>router-view</code>组件去承载子路由，才能实现子路由切换展示</p>
+<h3 id="一层路由"><a href="#一层路由" class="headerlink" title="一层路由"></a>一层路由</h3><h4 id="Root容器"><a href="#Root容器" class="headerlink" title="Root容器"></a>Root容器</h4><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">h1</span>&gt;</span>Root<span class="tag">&lt;/<span class="name">h1</span>&gt;</span></span><br><span class="line">  <span class="comment">&lt;!-- 承载子路由的容器 --&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">router-view</span> /&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<h4 id="一层路由写法"><a href="#一层路由写法" class="headerlink" title="一层路由写法"></a>一层路由写法</h4><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">[</span><br><span class="line">  &#123;</span><br><span class="line">    path: <span class="string">'/profile'</span></span><br><span class="line">    component: profile <span class="comment">// 组件引用 此处省略引用</span></span><br><span class="line">  &#125;,</span><br><span class="line">  &#123;</span><br><span class="line">    path: <span class="string">'/posts'</span></span><br><span class="line">    component: posts <span class="comment">// 组件引用 此处省略引用</span></span><br><span class="line">  &#125;,</span><br><span class="line">]</span><br></pre></td></tr></table></figure>
+<h4 id="一层路由展示"><a href="#一层路由展示" class="headerlink" title="一层路由展示"></a>一层路由展示</h4><p>Root的子路由展示是在Root中的，切换路由其实只是切换了<code>router-view</code>容器的内容<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">/profile                              /posts</span><br><span class="line">+------------------+                  +-----------------+</span><br><span class="line">| Root             |                  | Root            |</span><br><span class="line">| +--------------+ |                  | +-------------+ |</span><br><span class="line">| | Profile      | |  +------------&gt;  | | Posts       | |</span><br><span class="line">| |              | |                  | |             | |</span><br><span class="line">| +--------------+ |                  | +-------------+ |</span><br><span class="line">+------------------+                  +-----------------+</span><br></pre></td></tr></table></figure></p>
+<h3 id="二层路由"><a href="#二层路由" class="headerlink" title="二层路由"></a>二层路由</h3><p>在上面的基础上，对profile加一层路由</p>
+<h4 id="profile容器"><a href="#profile容器" class="headerlink" title="profile容器"></a>profile容器</h4><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">h1</span>&gt;</span>profile<span class="tag">&lt;/<span class="name">h1</span>&gt;</span></span><br><span class="line">  <span class="comment">&lt;!-- 承载profile子路由的容器 --&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">router-view</span> /&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<h4 id="profile子路由"><a href="#profile子路由" class="headerlink" title="profile子路由"></a>profile子路由</h4><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">[</span><br><span class="line">  &#123;</span><br><span class="line">    path: <span class="string">'/profile'</span></span><br><span class="line">    component: profile, <span class="comment">// 此处不能少</span></span><br><span class="line">    children: [</span><br><span class="line">      &#123;</span><br><span class="line">        path: <span class="string">'/profile/list'</span>,</span><br><span class="line">        component: profileList</span><br><span class="line">      &#125;,</span><br><span class="line">      &#123;</span><br><span class="line">        path: <span class="string">'/profile/item'</span>,</span><br><span class="line">        component: profileItem</span><br><span class="line">      &#125;</span><br><span class="line">    ]</span><br><span class="line">  &#125;,</span><br><span class="line">  ...</span><br><span class="line">]</span><br></pre></td></tr></table></figure>
+<h4 id="二层路由展示"><a href="#二层路由展示" class="headerlink" title="二层路由展示"></a>二层路由展示</h4><p>和一层路由相同的是，Profile的子路由是在Profile容器中切换展示的，<code>所以Profile路由的component是必不可少的</code><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">/profile/list                         /profile/item</span><br><span class="line">+------------------+                  +-----------------+</span><br><span class="line">| Root             |                  | Root            |</span><br><span class="line">| +--------------+ |                  | +-------------+ |</span><br><span class="line">| | Profile      | |  +------------&gt;  | | Profile     | |</span><br><span class="line">| | +----------+ | |                  | | +---------+ | |</span><br><span class="line">| | | list     | | |                  | | | item    | | |</span><br><span class="line">| | |          | | |                  | | |         | | |</span><br><span class="line">| | +----------+ | |                  | | +---------+ | |</span><br><span class="line">| +--------------+ |                  | +-------------+ |</span><br><span class="line">+------------------+                  +-----------------+</span><br></pre></td></tr></table></figure></p>
+<h2 id="路由嵌套总结"><a href="#路由嵌套总结" class="headerlink" title="路由嵌套总结"></a>路由嵌套总结</h2><p>任何子路由都是在其父路由的组件中切换显示，不管是多少层的路由嵌套，都是这样的理解，所以父路由需要有以下两点，二者缺一不可</p>
+<ul>
+<li><code>有组件引用</code></li>
+<li><code>组件中有router-view组件</code></li>
+</ul>
+<p>而我那个朋友就是父路由没有引用组件，导致子路由没有承载容器，自然而然就出现了他说的不起效的情况，这里把经验分享给大家，希望能对初学者有帮助</p>
 
       
     </div>
@@ -543,7 +552,7 @@
     <strong>本文作者： </strong>Tyler He</li>
   <li class="post-copyright-link">
     <strong>本文链接：</strong>
-    <a href="https://shjhe.github.io/hexo/2018/07/02/第一篇文章/" title="第一篇文章">https://shjhe.github.io/hexo/2018/07/02/第一篇文章/</a>
+    <a href="https://shjhe.github.io/hexo/2018/07/27/Vue-Router路由嵌套理解/" title="Vue-Router路由嵌套理解">https://shjhe.github.io/hexo/2018/07/27/Vue-Router路由嵌套理解/</a>
   </li>
   <li class="post-copyright-license">
     <strong>版权声明： </strong>本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" rel="external nofollow" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明出处！</li>
@@ -556,7 +565,7 @@
       
         <div class="post-tags">
           
-            <a href="/hexo/tags/简述/" rel="tag"><i class="fa fa-tag"></i> 简述</a>
+            <a href="/hexo/tags/Vue-Router/" rel="tag"><i class="fa fa-tag"></i> Vue-Router</a>
           
         </div>
       
@@ -569,15 +578,15 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
+              <a href="/hexo/2018/07/16/使用Fiddler拦截线上H5，并替换成开发环境页面/" rel="next" title="使用Fiddler拦截线上H5，并替换成开发环境页面">
+                <i class="fa fa-chevron-left"></i> 使用Fiddler拦截线上H5，并替换成开发环境页面
+              </a>
+            
           </div>
 
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/hexo/2018/07/04/Hexo Next主题开启字数统计及阅读时长/" rel="prev" title="Hexo Next主题开启字数统计及阅读时长">
-                Hexo Next主题开启字数统计及阅读时长 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -627,7 +636,7 @@
           $("#gitment-display-button").attr("style", "display:none");
           $("#gitment-container").attr("style", "").addClass("gitment_container");
           var gitment = new Gitment({
-            id: '第一篇文章',
+            id: 'Vue-Router路由嵌套理解',
             theme: myTheme,
             owner: 'shjhe',
             repo: 'HexoComment',
@@ -664,8 +673,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -771,6 +789,22 @@
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#背景"><span class="nav-number">1.</span> <span class="nav-text">背景</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Vue-Router嵌套路由"><span class="nav-number">2.</span> <span class="nav-text">Vue-Router嵌套路由</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#一层路由"><span class="nav-number">2.1.</span> <span class="nav-text">一层路由</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#Root容器"><span class="nav-number">2.1.1.</span> <span class="nav-text">Root容器</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#一层路由写法"><span class="nav-number">2.1.2.</span> <span class="nav-text">一层路由写法</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#一层路由展示"><span class="nav-number">2.1.3.</span> <span class="nav-text">一层路由展示</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#二层路由"><span class="nav-number">2.2.</span> <span class="nav-text">二层路由</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#profile容器"><span class="nav-number">2.2.1.</span> <span class="nav-text">profile容器</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#profile子路由"><span class="nav-number">2.2.2.</span> <span class="nav-text">profile子路由</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#二层路由展示"><span class="nav-number">2.2.3.</span> <span class="nav-text">二层路由展示</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#路由嵌套总结"><span class="nav-number">3.</span> <span class="nav-text">路由嵌套总结</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
