@@ -6,7 +6,7 @@
   <link href="/hexo/atom.xml" rel="self"/>
   
   <link href="https://shjhe.github.io/hexo/"/>
-  <updated>2018-07-27T03:53:47.512Z</updated>
+  <updated>2018-07-30T07:15:57.371Z</updated>
   <id>https://shjhe.github.io/hexo/</id>
   
   <author>
@@ -15,6 +15,40 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>File to read not found or unreadable</title>
+    <link href="https://shjhe.github.io/hexo/2018/07/30/File%20to%20read%20not%20found%20or%20unreadable/"/>
+    <id>https://shjhe.github.io/hexo/2018/07/30/File to read not found or unreadable/</id>
+    <published>2018-07-30T06:42:00.000Z</published>
+    <updated>2018-07-30T07:15:57.371Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;背景&quot;&gt;&lt;a href=&quot;#背景&quot; class=&quot;headerlink&quot;
+        
+      
+    
+    </summary>
+    
+      <category term="create-react-app" scheme="https://shjhe.github.io/hexo/categories/create-react-app/"/>
+    
+      <category term="react" scheme="https://shjhe.github.io/hexo/categories/create-react-app/react/"/>
+    
+    
+      <category term="create-react-app" scheme="https://shjhe.github.io/hexo/tags/create-react-app/"/>
+    
+      <category term="node-sass-chokidar" scheme="https://shjhe.github.io/hexo/tags/node-sass-chokidar/"/>
+    
+      <category term="node-sass" scheme="https://shjhe.github.io/hexo/tags/node-sass/"/>
+    
+      <category term="bug" scheme="https://shjhe.github.io/hexo/tags/bug/"/>
+    
+  </entry>
   
   <entry>
     <title>Vue-Router路由嵌套理解</title>
