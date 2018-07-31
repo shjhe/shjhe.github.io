@@ -9,6 +9,13 @@
   </url>
   
   <url>
+    <loc>https://shjhe.github.io/hexo/tags/index.html</loc>
+    
+    <lastmod>2018-07-27T10:38:29.154Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://shjhe.github.io/hexo/2018/07/27/Vue-Router%E8%B7%AF%E7%94%B1%E5%B5%8C%E5%A5%97%E7%90%86%E8%A7%A3/</loc>
     
     <lastmod>2018-07-27T10:38:29.154Z</lastmod>
@@ -16,7 +23,7 @@
   </url>
   
   <url>
-    <loc>https://shjhe.github.io/hexo/tags/index.html</loc>
+    <loc>https://shjhe.github.io/hexo/categories/index.html</loc>
     
     <lastmod>2018-07-27T10:38:29.154Z</lastmod>
     
@@ -30,21 +37,7 @@
   </url>
   
   <url>
-    <loc>https://shjhe.github.io/hexo/2018/07/16/%E4%BD%BF%E7%94%A8Fiddler%E8%BF%9B%E8%A1%8C%E7%A7%BB%E5%8A%A8%E7%AB%AF%E4%BB%A3%E7%90%86%E8%B0%83%E8%AF%95/</loc>
-    
-    <lastmod>2018-07-27T10:38:29.154Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>https://shjhe.github.io/hexo/2018/07/04/Hexo%20Next%E4%B8%BB%E9%A2%98%E5%BC%80%E5%90%AF%E5%AD%97%E6%95%B0%E7%BB%9F%E8%AE%A1%E5%8F%8A%E9%98%85%E8%AF%BB%E6%97%B6%E9%95%BF/</loc>
-    
-    <lastmod>2018-07-27T10:38:29.154Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://shjhe.github.io/hexo/about/index.html</loc>
     
     <lastmod>2018-07-27T10:38:29.154Z</lastmod>
     
@@ -58,7 +51,14 @@
   </url>
   
   <url>
-    <loc>https://shjhe.github.io/hexo/categories/index.html</loc>
+    <loc>https://shjhe.github.io/hexo/about/index.html</loc>
+    
+    <lastmod>2018-07-27T10:38:29.154Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://shjhe.github.io/hexo/2018/07/16/%E4%BD%BF%E7%94%A8Fiddler%E8%BF%9B%E8%A1%8C%E7%A7%BB%E5%8A%A8%E7%AB%AF%E4%BB%A3%E7%90%86%E8%B0%83%E8%AF%95/</loc>
     
     <lastmod>2018-07-27T10:38:29.154Z</lastmod>
     
